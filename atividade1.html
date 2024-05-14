@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Switch</title>
+</head>
+<body>
+    <h1>Atividade de Switch Case</h1>
+    <p>Nome do aluno: <span id="na"></span></p>
+    <p>Curso: <span id="c"></span></p>
+    <p>Valor do curso: <span id="vc"></span></p>
+    <p>Duração do curso: <span id="dc"></span></p>
+
+    <script>
+
+        let nome = prompt("Digite o nome do aluno")
+        let curso = prompt("Escolha o curso, 1 - Digitação, 2 - Engenharia, 3 - ED.Física, 4 - TI")
+        let valor 
+        let duracao
+
+       switch (curso) {
+        case "1":
+            curso = "Digitação"
+            valor = "R$100"
+            duracao = "80 Horas"
+            break;
+        case "2": 
+            curso = "Engenharia"
+            valor = "R$1000"
+            duracao = "2000 Horas"
+            break;
+        case "3": 
+            curso = "ED.Física"
+            valor = "300"
+            duracao = "150 Horas"
+            break;
+        case "4": 
+            curso = "TI"
+            valor = "800"
+            duracao = "1800 Horas"
+            default:
+            curso = "Curso inexistente";
+                valor = "Curso inexistente";
+                duracao = "Curso inexistente";
+            break;
+            
+       }
+
+        document.getElementById("na").innerHTML = nome
+        document.getElementById("c").innerHTML = curso
+        document.getElementById("vc").innerHTML = valor
+        document.getElementById("dc").innerHTML = duracao
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
